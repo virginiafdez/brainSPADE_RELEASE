@@ -1,0 +1,17 @@
+ldm:
+  base_lr: 0.000025
+  params:
+    linear_start: 0.0015
+    linear_end: 0.0195
+    log_every_t: 100
+    timesteps: 1000
+    conditioning_key: "concat"
+    unet_config:
+      params:
+        image_size: 32
+        in_channels: 6
+        out_channels: 3
+        model_channels: 256
+        attention_resolutions: [8,4,2]
+        num_res_blocks: 2
+        channel_mult: [1,2,4]

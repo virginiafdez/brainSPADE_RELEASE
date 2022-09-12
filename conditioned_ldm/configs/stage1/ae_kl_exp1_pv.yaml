@@ -1,0 +1,27 @@
+stage1:
+  base_lr: 0.00005
+  disc_lr: 0.0001
+  lr_decay: 0.999995
+  perceptual_weight: 0.002
+  gan_weight: 0.005
+  kl_weight: 0.000001
+  params:
+    embed_dim: 8
+    hparams:
+      z_channels: 8
+      resolution: [192, 256]
+      in_channels: 9
+      out_channels: 9
+      n_channels: 128
+      ch_mult: [1, 2, 4]
+      num_res_blocks: 2
+      attn_resolutions: []
+
+discriminator:
+  params:
+    input_nc: 9
+    ndf: 128
+
+perceptual_network:
+  params:
+    net: "squeeze"

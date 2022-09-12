@@ -1,0 +1,13 @@
+lpips==0.1.4
+matplotlib
+mlflow
+monai[nibabel]==0.8.0
+nibabel
+pandas
+scipy
+tensorboardX
+tqdm
+einops>=0.3.2
+omegaconf==2.1.1
+imageio
+moviepy

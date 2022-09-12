@@ -1,0 +1,8 @@
+FROM nvcr.io/nvidia/pytorch:22.02-py3
+
+COPY requirements.txt .
+RUN pip3 install -r requirements.txt
+
+RUN mkdir /torch_home
+ENV TORCH_HOME=/torch_home
+RUN python3 -c "import lpips;lpips.LPIPS(net='squeeze')"

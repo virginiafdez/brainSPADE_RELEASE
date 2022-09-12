@@ -1,0 +1,5 @@
+The code from this package is based on
+Rombach, R., Blattmann, A., Lorenz, D., Esser, P., Ommer, B.: High-ResolutionImage Synthesis with Latent Diffusion Models (2021)
+
+And credited to W. Hugo Lopez Pinaya (warvito.github.io).
+The code is originally from https://github.com/Warvito/conditioned_ldm.git.
