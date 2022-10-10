@@ -23,10 +23,6 @@ in configs > diffusion > ae_kl_nexp_pv.yaml and ae_kl_newdataset_pv.yaml and in 
 
 ## DATA FORMAT:
 
-The data format is summarised in the attached images.
-
-![plot](/home/vf19/Documents/JOURNAL2022/data_format_label_ge.png)
-
 The datasets for the label generator are created as:
 > train, validation and test folders, and in each of them: labels or pv_maps folders. In them, files are NPY,
 and named [ROOT FILE: can be T1, FLAIR or Parcellation]_XXXX_XXXX_13_tumour-edema.npy. The "13" is the slice number
